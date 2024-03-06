@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Quicksand, sans-serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.banner{
+    position: absolute;
+    z-index: 100;
+    top: 25%;
+    left: -50rem;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    transition: left 0.8s;
+    
+}
+
+.container.change .banner{
+    left: 5rem;
+}
+
+.banner h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.banner p{
+    font-size: 2rem;
+}
+
+.form-wrapper {
+    width: 100rem;
+    height: 70rem;
+    background-color: #fff4a0;
+    border-radius: 3rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+
+.redyell-bg{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,red,yellow);
+    top:0;
+    left: 0;
+    position: absolute;
+    z-index: 50;
+    transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.redyell-bg button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6rem;
+    width: 12rem;
+    background-color: transparent;
+    border-radius: 3rem;
+    border: 0.1rem solid white;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,0.3);
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.5rem;
+}
+
+.signup-form{
+    height: 100%;
+    width: 60rem;
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem 0;
+    transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.social-media{
+    display: flex;
+}
+
+.signup-form h1{
+    font-size: 4rem;
+    color: rgb(243, 100, 35);
+}
+
+.social-media i{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    border: 0.1rem solid rgb(243, 100, 35);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 5%;
+    
+}
+
+.signup-form p{
+    font-size: 1.8rem;
+    color: rgb(243, 100, 35); 
+
+}
+
+.input-group input{
+    height: 5rem;
+    width: 20rem;
+    padding-left: 10px;
+    background-color: #f8e554;
+    border: none;
+}
+
+.signup-form i{
+    font-size: 2.3rem;
+    padding-right: 10px;
+}
+
+.input-group{
+    position: relative;
+}
+.signup-form button{
+    transform: translateX(-50%);
+    height: 5rem;
+    width: 12rem;
+    background-color: #f8e554;
+    border-radius: 3rem;
+    border: 0.1rem solid white;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,0.3);
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: rgb(243, 100, 35);
+    font-size: 1.5rem;
+    margin-top: 10px;
+    position: absolute;
+    top:86%;
+    left: 50%;
+}
+
+.container.change .signup-form {
+    left: 40rem;
+}
+
+.container.change .redyell-bg {
+    width: 40%;
+}
