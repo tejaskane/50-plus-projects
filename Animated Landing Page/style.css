@@ -1,0 +1,112 @@
+* {
+    border: 0;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/sunset-bg.jpg');
+    background-size: cover;
+}
+
+.banner {
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px darkblue;
+    animation-name: moveToLeft;
+    animation-duration: 2s;
+}
+
+span {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 800;
+
+}
+
+p {
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px darkblue;
+    animation-name: moveToRight;
+    animation-duration: 2s;
+}
+
+button {
+    width: 180px;
+    padding: 12px;
+    margin: 20px;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px darkblue;
+    font-size: 20px;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    animation-name: animateBtn;
+    animation-duration: 1s;
+}
+
+.btn-left {
+    background-color: rgb(42, 1, 88);
+    color: white;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+.btn-right {
+    background-color: transparent;
+    color: white;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes animateBtn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}

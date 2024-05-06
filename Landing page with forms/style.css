@@ -1,0 +1,195 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/sunset-bg.jpg);
+    background-size: cover;
+}
+
+.banner {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px black;
+}
+
+.banner p {
+    color: azure;
+    font-family: "Josefin sans", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-align: right;
+    text-shadow: 0 0 5px black;
+}
+
+.btns {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+}
+
+.btn {
+    width: 170px;
+    padding: 10px 15px;
+    margin-right: 20px;
+    border-radius: 50px;
+    font-family: "Josefin sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: 0 0 5px darkblue;
+    transition: transform 0.2s;
+}
+
+.login-btn {
+    background-color: rgb(42, 1, 88);
+    color: white;
+    opacity: .7;
+}
+
+.signup-btn {
+    background-color: transparent;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.modal {
+    width: 400px;
+    background-image: url(./images/sunset-bg.jpg);
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+.display {
+    visibility: visible;
+}
+
+
+.form-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.disable {
+    opacity: 1;
+    visibility: visible;
+}
+
+.x-btn {
+    position: absolute;
+    right: 20px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-header {
+    text-align: center;
+    margin: 80px 0 150px 0;
+    color: white;
+}
+
+.form-header h1 {
+    font-family: "Josefin sans", sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.form-header h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-group input {
+    width: 250px;
+    padding: 15px 15px 15px 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-family: "Josefin sans", sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+.input-group i {
+    position: absolute;
+    top: 13px;
+    left: 17px;
+}
+
+form button {
+    width: 310px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(42, 1, 88);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    box-shadow: 0 5px 15px black;
+    cursor: pointer;
+    font-family: "Josefin sans", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px white;
+}
+
+.form button:active {
+    transform: translateY(0);
+}

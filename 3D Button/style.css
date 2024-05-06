@@ -1,0 +1,67 @@
+/* Reset stules */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .7),
+            rgba(0, 0, 0, .8)), url(images/resturant.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*perspective defines how far the element is from the user*/
+    perspective: 1000px;
+}
+
+.btn {
+    width: 350px;
+    height: 100px;
+    background: linear-gradient(orange, brown);
+    border: none;
+    outline: none;
+    font-family: 'Slabo 27px', serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: wheat;
+    text-shadow: 0 10px 10px black;
+    cursor: pointer;
+    /* rotate the button using x and z axis */
+    transform: rotateX(70deg) rotateZ(30deg);
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+/* The ::before pseudo-element can be used to insert some content before the content of an element. */
+.btn::before {
+    content: '';
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(orange, brown);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+.btn::after {
+    content: '';
+    width: 15px;
+    height: 100%;
+    background: linear-gradient(orange, brown);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+
+.btn:hover {
+    transform: rotateX(30deg) rotateZ(0deg);
+}
